@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72a3945dda0de654c901917f5f9af1a7, type: 3}
+  m_Name: SceneConfig - Boot
+  m_EditorClassIdentifier: GameScripts::FeSimpleFramework.General.SceneConfig
+  scene:
+    sceneAsset: {fileID: 102900000, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
+    scenePath: Assets/Scenes/01 - Boot.unity
+  nextSceneConfig: {fileID: 11400000, guid: 395c3a9edd572474290b5224426bb94c, type: 2}
+  devInfo: 

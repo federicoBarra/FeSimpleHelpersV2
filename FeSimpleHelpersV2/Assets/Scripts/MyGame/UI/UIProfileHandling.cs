@@ -1,4 +1,3 @@
-using FeSimpleHelpers;
 using FeSimpleHelpers.UI;
 using MyGame.General;
 using MyGame.Persistence;
@@ -9,14 +8,21 @@ namespace MyGame.UI
 {
 	public class UIProfileHandling : UIWindow
 	{
-		public GameObject currentProfileGO;
-		public GameObject selectProfileGO;
-		public GameObject createNewProfileDialogGO;
-		public TMP_InputField inputField;
-		public TMP_Text curentProfileName;
-		public TMP_Text versionText;
+		[SerializeField]
+		private GameObject currentProfileGO;
+		[SerializeField]
+		private GameObject selectProfileGO;
+		[SerializeField]
+		private GameObject createNewProfileDialogGO;
+		[SerializeField]
+		private TMP_InputField inputField;
+		[SerializeField]
+		private TMP_Text curentProfileName;
+		[SerializeField]
+		private TMP_Text versionText;
 
-		public UIUserProfile[] userProfiles;
+		[SerializeField]
+		private UIUserProfile[] userProfiles;
 
 		protected override void Start()
 		{
@@ -72,5 +78,13 @@ namespace MyGame.UI
 			selectProfileGO.SetActive(false);
 			Refresh();
 		}
+
+		public void SelectProfile(int i)
+		{
+			UserProfiles.Get().SetSelectedProfile(i);
+			selectProfileGO.SetActive(false);
+			Refresh();
+		}
+
 	}
 }

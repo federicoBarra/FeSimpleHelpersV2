@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "GameInputActions",
     "maps": [
         {
@@ -15,28 +16,10 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Nitro",
-                    "type": "Button",
-                    "id": "99ef69e7-faf8-45ac-b380-352d5f3436fe",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Shoot",
-                    "type": "Button",
-                    "id": "258b8085-e16b-4a62-81d4-f90adadc036b",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Melee",
                     "type": "Button",
                     "id": "47976792-c876-4bf0-89c4-91c6a235b64f",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -45,7 +28,7 @@
                     "name": "Interact",
                     "type": "Button",
                     "id": "f2c14953-e761-40ea-afc6-2e6e44c4d3c4",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -54,107 +37,13 @@
                     "name": "Esq",
                     "type": "Button",
                     "id": "e25dcb94-5f85-4d69-9aca-6feb2aecbb75",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "PendexGoTo",
-                    "type": "Button",
-                    "id": "7759731b-d37b-4a19-970c-a51f9356e841",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "PendexReturn",
-                    "type": "Button",
-                    "id": "3204b254-baa9-4129-8619-d6df6da91e49",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "ToggleMap",
-                    "type": "Button",
-                    "id": "20f51a3e-1fb1-4f70-8353-f8733a23a1a3",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "SetWeapon01",
-                    "type": "Button",
-                    "id": "a9a0e052-bf90-4e58-bd07-54c5f171ed1c",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "SetWeapon02",
-                    "type": "Button",
-                    "id": "74a61782-385c-4f54-b460-816b0aed7c13",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "SetWeapon03",
-                    "type": "Button",
-                    "id": "7542a36b-035c-4c43-aeeb-92d1c5ef747d",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "SetWeapon04",
-                    "type": "Button",
-                    "id": "bfb4c5b8-18c9-4391-8581-4bd176110d5c",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Reload",
-                    "type": "Button",
-                    "id": "f8be15f3-634e-4abf-b7bc-12d00c207435",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "f0d21b1b-d052-4b0f-9e12-69fd7908770f",
-                    "path": "<Mouse>/rightButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PendexGoTo",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "df4418b9-7584-405e-9c6e-cc45112b72e3",
-                    "path": "<Gamepad>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PendexGoTo",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "",
                     "id": "209cb1fc-df88-49e0-a9e5-182c360a2051",
@@ -185,28 +74,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Interact",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "4d434f17-a932-43bd-ad0b-7711b42390d6",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Shoot",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "626e083c-0e5f-44c1-a0be-341b2e9a8193",
-                    "path": "<Keyboard>/leftShift",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Nitro",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -278,89 +145,12 @@
                 },
                 {
                     "name": "",
-                    "id": "da75cf1e-fee0-488a-b7ce-2083422cef71",
-                    "path": "<Keyboard>/q",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "PendexReturn",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "01a2c943-90d7-4207-a9c4-04ff9eed7fa1",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Melee",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "1a811eb9-46f7-4c94-a3c4-f121eb80b16b",
-                    "path": "<Keyboard>/m",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "ToggleMap",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "b4b2e62f-f5d7-4c4a-b579-923d62a7b9b3",
-                    "path": "<Keyboard>/1",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "SetWeapon01",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "da276b2e-96bc-445f-9936-23841178ca98",
-                    "path": "<Keyboard>/2",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "SetWeapon02",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "deec3657-8a90-4d61-bdb0-0da9248a8f45",
-                    "path": "<Keyboard>/3",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "SetWeapon03",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "68ba82cb-e3b8-4733-a6c9-a8ae2dff1075",
-                    "path": "<Keyboard>/4",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "SetWeapon04",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3baf9276-ae53-4def-a3f0-0b6a7b4774f0",
-                    "path": "<Keyboard>/r",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Reload",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 606bf62734fc72c4eb6d5f7d54cb9847
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - firstLevel: {instanceID: 0}
+  - bootScene: {instanceID: 0}
+  - introScene: {instanceID: 0}
+  - mainMenuScene: {instanceID: 0}
+  - lobbyScene: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

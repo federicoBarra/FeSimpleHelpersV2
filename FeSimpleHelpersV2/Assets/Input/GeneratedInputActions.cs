@@ -102,28 +102,10 @@ public partial class @GeneratedInputActions: IInputActionCollection2, IDisposabl
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Nitro"",
-                    ""type"": ""Button"",
-                    ""id"": ""99ef69e7-faf8-45ac-b380-352d5f3436fe"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Shoot"",
-                    ""type"": ""Button"",
-                    ""id"": ""258b8085-e16b-4a62-81d4-f90adadc036b"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""Melee"",
                     ""type"": ""Button"",
                     ""id"": ""47976792-c876-4bf0-89c4-91c6a235b64f"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -132,7 +114,7 @@ public partial class @GeneratedInputActions: IInputActionCollection2, IDisposabl
                     ""name"": ""Interact"",
                     ""type"": ""Button"",
                     ""id"": ""f2c14953-e761-40ea-afc6-2e6e44c4d3c4"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -141,107 +123,13 @@ public partial class @GeneratedInputActions: IInputActionCollection2, IDisposabl
                     ""name"": ""Esq"",
                     ""type"": ""Button"",
                     ""id"": ""e25dcb94-5f85-4d69-9aca-6feb2aecbb75"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""PendexGoTo"",
-                    ""type"": ""Button"",
-                    ""id"": ""7759731b-d37b-4a19-970c-a51f9356e841"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""PendexReturn"",
-                    ""type"": ""Button"",
-                    ""id"": ""3204b254-baa9-4129-8619-d6df6da91e49"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""ToggleMap"",
-                    ""type"": ""Button"",
-                    ""id"": ""20f51a3e-1fb1-4f70-8353-f8733a23a1a3"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""SetWeapon01"",
-                    ""type"": ""Button"",
-                    ""id"": ""a9a0e052-bf90-4e58-bd07-54c5f171ed1c"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""SetWeapon02"",
-                    ""type"": ""Button"",
-                    ""id"": ""74a61782-385c-4f54-b460-816b0aed7c13"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""SetWeapon03"",
-                    ""type"": ""Button"",
-                    ""id"": ""7542a36b-035c-4c43-aeeb-92d1c5ef747d"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""SetWeapon04"",
-                    ""type"": ""Button"",
-                    ""id"": ""bfb4c5b8-18c9-4391-8581-4bd176110d5c"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Reload"",
-                    ""type"": ""Button"",
-                    ""id"": ""f8be15f3-634e-4abf-b7bc-12d00c207435"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""f0d21b1b-d052-4b0f-9e12-69fd7908770f"",
-                    ""path"": ""<Mouse>/rightButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""PendexGoTo"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""df4418b9-7584-405e-9c6e-cc45112b72e3"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""PendexGoTo"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
                 {
                     ""name"": """",
                     ""id"": ""209cb1fc-df88-49e0-a9e5-182c360a2051"",
@@ -272,28 +160,6 @@ public partial class @GeneratedInputActions: IInputActionCollection2, IDisposabl
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Interact"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""4d434f17-a932-43bd-ad0b-7711b42390d6"",
-                    ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Shoot"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""626e083c-0e5f-44c1-a0be-341b2e9a8193"",
-                    ""path"": ""<Keyboard>/leftShift"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Nitro"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -365,89 +231,12 @@ public partial class @GeneratedInputActions: IInputActionCollection2, IDisposabl
                 },
                 {
                     ""name"": """",
-                    ""id"": ""da75cf1e-fee0-488a-b7ce-2083422cef71"",
-                    ""path"": ""<Keyboard>/q"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""PendexReturn"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""01a2c943-90d7-4207-a9c4-04ff9eed7fa1"",
                     ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Melee"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""1a811eb9-46f7-4c94-a3c4-f121eb80b16b"",
-                    ""path"": ""<Keyboard>/m"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""ToggleMap"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""b4b2e62f-f5d7-4c4a-b579-923d62a7b9b3"",
-                    ""path"": ""<Keyboard>/1"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SetWeapon01"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""da276b2e-96bc-445f-9936-23841178ca98"",
-                    ""path"": ""<Keyboard>/2"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SetWeapon02"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""deec3657-8a90-4d61-bdb0-0da9248a8f45"",
-                    ""path"": ""<Keyboard>/3"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SetWeapon03"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""68ba82cb-e3b8-4733-a6c9-a8ae2dff1075"",
-                    ""path"": ""<Keyboard>/4"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SetWeapon04"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""3baf9276-ae53-4def-a3f0-0b6a7b4774f0"",
-                    ""path"": ""<Keyboard>/r"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Reload"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -975,19 +764,9 @@ public partial class @GeneratedInputActions: IInputActionCollection2, IDisposabl
         // Ingame
         m_Ingame = asset.FindActionMap("Ingame", throwIfNotFound: true);
         m_Ingame_Movement = m_Ingame.FindAction("Movement", throwIfNotFound: true);
-        m_Ingame_Nitro = m_Ingame.FindAction("Nitro", throwIfNotFound: true);
-        m_Ingame_Shoot = m_Ingame.FindAction("Shoot", throwIfNotFound: true);
         m_Ingame_Melee = m_Ingame.FindAction("Melee", throwIfNotFound: true);
         m_Ingame_Interact = m_Ingame.FindAction("Interact", throwIfNotFound: true);
         m_Ingame_Esq = m_Ingame.FindAction("Esq", throwIfNotFound: true);
-        m_Ingame_PendexGoTo = m_Ingame.FindAction("PendexGoTo", throwIfNotFound: true);
-        m_Ingame_PendexReturn = m_Ingame.FindAction("PendexReturn", throwIfNotFound: true);
-        m_Ingame_ToggleMap = m_Ingame.FindAction("ToggleMap", throwIfNotFound: true);
-        m_Ingame_SetWeapon01 = m_Ingame.FindAction("SetWeapon01", throwIfNotFound: true);
-        m_Ingame_SetWeapon02 = m_Ingame.FindAction("SetWeapon02", throwIfNotFound: true);
-        m_Ingame_SetWeapon03 = m_Ingame.FindAction("SetWeapon03", throwIfNotFound: true);
-        m_Ingame_SetWeapon04 = m_Ingame.FindAction("SetWeapon04", throwIfNotFound: true);
-        m_Ingame_Reload = m_Ingame.FindAction("Reload", throwIfNotFound: true);
         // Menus
         m_Menus = asset.FindActionMap("Menus", throwIfNotFound: true);
         m_Menus_TrackedDeviceOrientation = m_Menus.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
@@ -1082,19 +861,9 @@ public partial class @GeneratedInputActions: IInputActionCollection2, IDisposabl
     private readonly InputActionMap m_Ingame;
     private List<IIngameActions> m_IngameActionsCallbackInterfaces = new List<IIngameActions>();
     private readonly InputAction m_Ingame_Movement;
-    private readonly InputAction m_Ingame_Nitro;
-    private readonly InputAction m_Ingame_Shoot;
     private readonly InputAction m_Ingame_Melee;
     private readonly InputAction m_Ingame_Interact;
     private readonly InputAction m_Ingame_Esq;
-    private readonly InputAction m_Ingame_PendexGoTo;
-    private readonly InputAction m_Ingame_PendexReturn;
-    private readonly InputAction m_Ingame_ToggleMap;
-    private readonly InputAction m_Ingame_SetWeapon01;
-    private readonly InputAction m_Ingame_SetWeapon02;
-    private readonly InputAction m_Ingame_SetWeapon03;
-    private readonly InputAction m_Ingame_SetWeapon04;
-    private readonly InputAction m_Ingame_Reload;
     /// <summary>
     /// Provides access to input actions defined in input action map "Ingame".
     /// </summary>
@@ -1111,14 +880,6 @@ public partial class @GeneratedInputActions: IInputActionCollection2, IDisposabl
         /// </summary>
         public InputAction @Movement => m_Wrapper.m_Ingame_Movement;
         /// <summary>
-        /// Provides access to the underlying input action "Ingame/Nitro".
-        /// </summary>
-        public InputAction @Nitro => m_Wrapper.m_Ingame_Nitro;
-        /// <summary>
-        /// Provides access to the underlying input action "Ingame/Shoot".
-        /// </summary>
-        public InputAction @Shoot => m_Wrapper.m_Ingame_Shoot;
-        /// <summary>
         /// Provides access to the underlying input action "Ingame/Melee".
         /// </summary>
         public InputAction @Melee => m_Wrapper.m_Ingame_Melee;
@@ -1130,38 +891,6 @@ public partial class @GeneratedInputActions: IInputActionCollection2, IDisposabl
         /// Provides access to the underlying input action "Ingame/Esq".
         /// </summary>
         public InputAction @Esq => m_Wrapper.m_Ingame_Esq;
-        /// <summary>
-        /// Provides access to the underlying input action "Ingame/PendexGoTo".
-        /// </summary>
-        public InputAction @PendexGoTo => m_Wrapper.m_Ingame_PendexGoTo;
-        /// <summary>
-        /// Provides access to the underlying input action "Ingame/PendexReturn".
-        /// </summary>
-        public InputAction @PendexReturn => m_Wrapper.m_Ingame_PendexReturn;
-        /// <summary>
-        /// Provides access to the underlying input action "Ingame/ToggleMap".
-        /// </summary>
-        public InputAction @ToggleMap => m_Wrapper.m_Ingame_ToggleMap;
-        /// <summary>
-        /// Provides access to the underlying input action "Ingame/SetWeapon01".
-        /// </summary>
-        public InputAction @SetWeapon01 => m_Wrapper.m_Ingame_SetWeapon01;
-        /// <summary>
-        /// Provides access to the underlying input action "Ingame/SetWeapon02".
-        /// </summary>
-        public InputAction @SetWeapon02 => m_Wrapper.m_Ingame_SetWeapon02;
-        /// <summary>
-        /// Provides access to the underlying input action "Ingame/SetWeapon03".
-        /// </summary>
-        public InputAction @SetWeapon03 => m_Wrapper.m_Ingame_SetWeapon03;
-        /// <summary>
-        /// Provides access to the underlying input action "Ingame/SetWeapon04".
-        /// </summary>
-        public InputAction @SetWeapon04 => m_Wrapper.m_Ingame_SetWeapon04;
-        /// <summary>
-        /// Provides access to the underlying input action "Ingame/Reload".
-        /// </summary>
-        public InputAction @Reload => m_Wrapper.m_Ingame_Reload;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1191,12 +920,6 @@ public partial class @GeneratedInputActions: IInputActionCollection2, IDisposabl
             @Movement.started += instance.OnMovement;
             @Movement.performed += instance.OnMovement;
             @Movement.canceled += instance.OnMovement;
-            @Nitro.started += instance.OnNitro;
-            @Nitro.performed += instance.OnNitro;
-            @Nitro.canceled += instance.OnNitro;
-            @Shoot.started += instance.OnShoot;
-            @Shoot.performed += instance.OnShoot;
-            @Shoot.canceled += instance.OnShoot;
             @Melee.started += instance.OnMelee;
             @Melee.performed += instance.OnMelee;
             @Melee.canceled += instance.OnMelee;
@@ -1206,30 +929,6 @@ public partial class @GeneratedInputActions: IInputActionCollection2, IDisposabl
             @Esq.started += instance.OnEsq;
             @Esq.performed += instance.OnEsq;
             @Esq.canceled += instance.OnEsq;
-            @PendexGoTo.started += instance.OnPendexGoTo;
-            @PendexGoTo.performed += instance.OnPendexGoTo;
-            @PendexGoTo.canceled += instance.OnPendexGoTo;
-            @PendexReturn.started += instance.OnPendexReturn;
-            @PendexReturn.performed += instance.OnPendexReturn;
-            @PendexReturn.canceled += instance.OnPendexReturn;
-            @ToggleMap.started += instance.OnToggleMap;
-            @ToggleMap.performed += instance.OnToggleMap;
-            @ToggleMap.canceled += instance.OnToggleMap;
-            @SetWeapon01.started += instance.OnSetWeapon01;
-            @SetWeapon01.performed += instance.OnSetWeapon01;
-            @SetWeapon01.canceled += instance.OnSetWeapon01;
-            @SetWeapon02.started += instance.OnSetWeapon02;
-            @SetWeapon02.performed += instance.OnSetWeapon02;
-            @SetWeapon02.canceled += instance.OnSetWeapon02;
-            @SetWeapon03.started += instance.OnSetWeapon03;
-            @SetWeapon03.performed += instance.OnSetWeapon03;
-            @SetWeapon03.canceled += instance.OnSetWeapon03;
-            @SetWeapon04.started += instance.OnSetWeapon04;
-            @SetWeapon04.performed += instance.OnSetWeapon04;
-            @SetWeapon04.canceled += instance.OnSetWeapon04;
-            @Reload.started += instance.OnReload;
-            @Reload.performed += instance.OnReload;
-            @Reload.canceled += instance.OnReload;
         }
 
         /// <summary>
@@ -1244,12 +943,6 @@ public partial class @GeneratedInputActions: IInputActionCollection2, IDisposabl
             @Movement.started -= instance.OnMovement;
             @Movement.performed -= instance.OnMovement;
             @Movement.canceled -= instance.OnMovement;
-            @Nitro.started -= instance.OnNitro;
-            @Nitro.performed -= instance.OnNitro;
-            @Nitro.canceled -= instance.OnNitro;
-            @Shoot.started -= instance.OnShoot;
-            @Shoot.performed -= instance.OnShoot;
-            @Shoot.canceled -= instance.OnShoot;
             @Melee.started -= instance.OnMelee;
             @Melee.performed -= instance.OnMelee;
             @Melee.canceled -= instance.OnMelee;
@@ -1259,30 +952,6 @@ public partial class @GeneratedInputActions: IInputActionCollection2, IDisposabl
             @Esq.started -= instance.OnEsq;
             @Esq.performed -= instance.OnEsq;
             @Esq.canceled -= instance.OnEsq;
-            @PendexGoTo.started -= instance.OnPendexGoTo;
-            @PendexGoTo.performed -= instance.OnPendexGoTo;
-            @PendexGoTo.canceled -= instance.OnPendexGoTo;
-            @PendexReturn.started -= instance.OnPendexReturn;
-            @PendexReturn.performed -= instance.OnPendexReturn;
-            @PendexReturn.canceled -= instance.OnPendexReturn;
-            @ToggleMap.started -= instance.OnToggleMap;
-            @ToggleMap.performed -= instance.OnToggleMap;
-            @ToggleMap.canceled -= instance.OnToggleMap;
-            @SetWeapon01.started -= instance.OnSetWeapon01;
-            @SetWeapon01.performed -= instance.OnSetWeapon01;
-            @SetWeapon01.canceled -= instance.OnSetWeapon01;
-            @SetWeapon02.started -= instance.OnSetWeapon02;
-            @SetWeapon02.performed -= instance.OnSetWeapon02;
-            @SetWeapon02.canceled -= instance.OnSetWeapon02;
-            @SetWeapon03.started -= instance.OnSetWeapon03;
-            @SetWeapon03.performed -= instance.OnSetWeapon03;
-            @SetWeapon03.canceled -= instance.OnSetWeapon03;
-            @SetWeapon04.started -= instance.OnSetWeapon04;
-            @SetWeapon04.performed -= instance.OnSetWeapon04;
-            @SetWeapon04.canceled -= instance.OnSetWeapon04;
-            @Reload.started -= instance.OnReload;
-            @Reload.performed -= instance.OnReload;
-            @Reload.canceled -= instance.OnReload;
         }
 
         /// <summary>
@@ -1526,20 +1195,6 @@ public partial class @GeneratedInputActions: IInputActionCollection2, IDisposabl
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnMovement(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Nitro" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnNitro(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "Shoot" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnShoot(InputAction.CallbackContext context);
-        /// <summary>
         /// Method invoked when associated input action "Melee" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
@@ -1560,62 +1215,6 @@ public partial class @GeneratedInputActions: IInputActionCollection2, IDisposabl
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnEsq(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "PendexGoTo" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnPendexGoTo(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "PendexReturn" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnPendexReturn(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "ToggleMap" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnToggleMap(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "SetWeapon01" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnSetWeapon01(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "SetWeapon02" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnSetWeapon02(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "SetWeapon03" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnSetWeapon03(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "SetWeapon04" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnSetWeapon04(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "Reload" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnReload(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Menus" which allows adding and removing callbacks.

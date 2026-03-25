@@ -1,58 +1,56 @@
 using MyGame.General;
+using MyGame.Ingame;
 using UnityEngine;
 
 namespace MyGame.Input
 {
 	public class PlayerInputHandler : MonoBehaviour
 	{
-		//TODO Player private Dude dude;
+		private PlayerController playerController;
 		private IngameManager ingameManager;
 
-		// Start is called before the first frame update
 		void Start()
 		{
-			//TODO Player dude = FindAnyObjectByType<Dude>();
+			//these references could be handled more elegantly, but for the sake of simplicity and time, this is fine.
+			playerController = FindAnyObjectByType<PlayerController>();
 			ingameManager = FindAnyObjectByType<IngameManager>();
 
-			InputConfig.OnTryInvokePause += PauseGame;
+			InputConfig.OnTryInvokePause += TryPauseGame;
 
 			InputConfig.OnMove += Move;
-
 			InputConfig.OnTryMelee += TryMelee;
 			InputConfig.OnTryInteract += TryInteract;
 		}
 
 		void OnDestroy()
 		{
-			InputConfig.OnTryInvokePause -= PauseGame;
+			InputConfig.OnTryInvokePause -= TryPauseGame;
 
 			InputConfig.OnMove -= Move;
-
 			InputConfig.OnTryMelee -= TryMelee;
 			InputConfig.OnTryInteract -= TryInteract;
 		}
 
 		//GAME
-		private void PauseGame()
+		private void TryPauseGame()
 		{
 			ingameManager.TryPause();
 		}
 
-		//CART
+		//PLAYER
 		private void Move(Vector2 move)
 		{
-			//TODO Player pepito?.SetMoveInput(move);
+			playerController?.SetMoveInput(move);
 		}
 
 		private void TryMelee()
 		{
-			//TODO Player dude?.combat.TryMelee();
+			playerController?.TryMelee();
 		}
 
-		//PEPITO
 		private void TryInteract()
 		{
-			//TODO Player pepito?.TryInteract();
+			playerController?.TryInteract();
 		}
 	}
 }

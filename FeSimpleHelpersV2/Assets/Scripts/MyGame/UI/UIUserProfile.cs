@@ -7,11 +7,18 @@ namespace MyGame.UI
 {
 	public class UIUserProfile : MonoBehaviour
 	{
-		public Image profileImage;
-		public TMP_Text nameText;
-		public TMP_Text durationText;
-		public Button addProfileButton;
-		public Button removeProfileButton;
+		[SerializeField]
+		private Image profileImage;
+		[SerializeField]
+		private TMP_Text nameText;
+		[SerializeField]
+		private TMP_Text durationText;
+		[SerializeField]
+		private Button addProfileButton;
+		[SerializeField]
+		private Button removeProfileButton;
+		[SerializeField]
+		private Button selectProfileButton;
 
 		public void Set(UserProfiles.UserProfile userProfile)
 		{
@@ -19,11 +26,13 @@ namespace MyGame.UI
 			{
 				nameText.text = userProfile.name;
 				durationText.text = userProfile.totalPlayTime.ToString("N2");
+				selectProfileButton.gameObject.SetActive(true);
 			}
 			else
 			{
 				nameText.text = "Empty Slot";
 				durationText.text = "";
+				selectProfileButton.gameObject.SetActive(false);
 			}
 
 			removeProfileButton.gameObject.SetActive(userProfile.isBeingUsed);

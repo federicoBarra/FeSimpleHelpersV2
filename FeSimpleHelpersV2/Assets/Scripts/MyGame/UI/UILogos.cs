@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using FeSimpleHelpers.Core;
+using FeSimpleHelpers.ScenesHandling;
 using MyGame.General;
 using UnityEngine;
 
@@ -8,13 +9,13 @@ namespace MyGame.UI
 {
 	public class UILogos : MonoBehaviour
 	{
-		public List<CanvasGroup> thingsToShow;
+		[SerializeField] private SceneConfig introConfig;
 
-		public float logosDuration = 3;
-		public AnimationCurve alphaCurve;
+		[SerializeField] private List<CanvasGroup> thingsToShow;
 
+		[SerializeField] private float logosDuration = 3;
+		[SerializeField] private AnimationCurve alphaCurve;
 
-		// Start is called before the first frame update
 		void Start()
 		{
 			foreach (CanvasGroup cg in thingsToShow)
@@ -59,7 +60,7 @@ namespace MyGame.UI
 
 		void EndIntro()
 		{
-			GameManager.Get().GoToMainMenu(2, LoaderManager.LoadingType.Simple);
+			GameManager.Get().GoToScene(introConfig.nextSceneConfig, 2f, LoaderManager.LoadingType.Simple);
 		}
 	}
 }
