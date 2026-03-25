@@ -1,7 +1,10 @@
 using UnityEngine;
 
-namespace FeSimpleHelpers
+namespace FeSimpleHelpers.WaypointsSystem
 {
+	/// <summary>
+	/// A simple WaypointsHandler
+	/// </summary>
 	public class WaypointsHandler : MonoBehaviour
 	{
 		private Waypoint[] waypoints;

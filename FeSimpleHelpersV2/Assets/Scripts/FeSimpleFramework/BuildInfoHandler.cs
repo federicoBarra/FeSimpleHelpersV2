@@ -2,76 +2,84 @@ using System;
 using System.IO;
 using UnityEngine;
 
-[Serializable]
-public class BuildInfo
+namespace FeSimpleHelpers.Build
 {
-	public string branchName;
-	public string date;
-	public string builderName;
-	public string commitHash;
-	public string unityVersion;
-	public string buildTarget;
+	//This is supposed to work in tandem with Editor/DevBuildWindow
 
-	public string GetNice()
+	[Serializable]
+	public class BuildInfo
 	{
-		string branchColor = "#FFFFFF";
+		public string branchName;
+		public string date;
+		public string builderName;
+		public string commitHash;
+		public string unityVersion;
+		public string buildTarget;
 
-		switch (branchName)
+		public string GetNice()
 		{
-			case "development":
-				branchColor = "#FF4040"; // red
-				break;
+			string branchColor = "#FFFFFF";
 
-			case "internal":
-				branchColor = "#FFD54A"; // yellow
-				break;
+			switch (branchName)
+			{
+				case "development":
+					branchColor = "#FF4040"; // red
+					break;
 
-			case "main":
-				branchColor = "#FFFFFF"; // white
-				break;
+				case "internal":
+					branchColor = "#FFD54A"; // yellow
+					break;
+
+				case "main":
+					branchColor = "#FFFFFF"; // white
+					break;
+			}
+
+			string shortCommit = string.IsNullOrEmpty(commitHash)
+				? ""
+				: commitHash.Substring(0, Mathf.Min(7, commitHash.Length));
+
+			string ret =
+				$"<color={branchColor}>{branchName}</color> " +
+				$"<color=#9A9A9A>{shortCommit}</color> " +
+				$"<color=#6F6F6F>{date}</color> " +
+				$"<color=#D4AF37AA>({builderName})</color>";
+
+			return ret;
 		}
-
-		string shortCommit = string.IsNullOrEmpty(commitHash) ? "" : commitHash.Substring(0, Mathf.Min(7, commitHash.Length));
-
-		string ret =
-			$"<color={branchColor}>{branchName}</color> " +
-			$"<color=#9A9A9A>{shortCommit}</color> " +
-			$"<color=#6F6F6F>{date}</color> " +
-			$"<color=#D4AF37AA>({builderName})</color>";
-
-		return ret;
 	}
-}
-public static class BuildInfoHandler
-{
-	private const string FileName = FileNameNOExtension+ ".json";
-	private const string FileNameNOExtension = "build_info";
 
-	private static string FilePath =>
-		Path.Combine(Application.dataPath + "\\Resources\\", FileName);
-
-	public static void Save(string branchName, string commitHash, string builderName)
+	public static class BuildInfoHandler
 	{
-		BuildInfo info = new BuildInfo
-		{
-			branchName = branchName,
-			date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
-			builderName = builderName,
-			commitHash = commitHash,
-		};
+		private const string FileName = FileNameNOExtension + ".json";
+		private const string FileNameNOExtension = "build_info";
 
-		string json = JsonUtility.ToJson(info, true);
-		File.WriteAllText(FilePath, json);
+		private static string FilePath =>
+			Path.Combine(Application.dataPath + "\\Resources\\", FileName);
+
+		public static void Save(string branchName, string commitHash, string builderName)
+		{
+			BuildInfo info = new BuildInfo
+			{
+				branchName = branchName,
+				date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
+				builderName = builderName,
+				commitHash = commitHash,
+			};
+
+			string json = JsonUtility.ToJson(info, true);
+			File.WriteAllText(FilePath, json);
 
 #if UNITY_EDITOR
-		UnityEditor.AssetDatabase.Refresh();
+			UnityEditor.AssetDatabase.Refresh();
 #endif
-	}
+		}
 
-	public static BuildInfo Load()
-	{
-		string json = Resources.Load<TextAsset>(FileNameNOExtension)?.ToString();
+		public static BuildInfo Load()
+		{
+			string json = Resources.Load<TextAsset>(FileNameNOExtension)?.ToString();
 
-		return JsonUtility.FromJson<BuildInfo>(json);
+			return JsonUtility.FromJson<BuildInfo>(json);
+		}
 	}
 }

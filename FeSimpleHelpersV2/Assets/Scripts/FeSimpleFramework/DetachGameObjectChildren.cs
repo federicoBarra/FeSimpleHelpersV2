@@ -2,6 +2,9 @@ using UnityEngine;
 
 namespace FeSimpleHelpers.General
 {
+	/// <summary>
+	/// See use of this on "Level 01" scene, "LEVEL NEEDED OBJECTS" GO.
+	/// </summary>
 	public class DetachGameObjectChildren : MonoBehaviour
 	{
 		public string startName = "--------- START OF Scene Needed Game Objects -------";

@@ -4,6 +4,10 @@ using UnityEngine;
 
 namespace FeSimpleHelpers.FeRandom
 {
+	/// <summary>
+	/// Unique Scriptable Object to handle random seeds for different systems in the game.
+	/// It allows you to have a master seed that can be used to generate consistent random sequences across different systems.
+	/// </summary>
 	[CreateAssetMenu(menuName = "FeSimpleFramework/Main Configs/RandomConfig")]
 	public class RandomConfig : ConfigSingleton<RandomConfig>
 	{

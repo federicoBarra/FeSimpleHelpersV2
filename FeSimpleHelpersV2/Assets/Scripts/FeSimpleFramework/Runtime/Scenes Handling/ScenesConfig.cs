@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace FeSimpleHelpers.ScenesHandling
 {
+	/// <summary>
+	/// Unique Scriptable Object to handle all the scenes in the game, from levels to cutscenes, main menu, etc.
+	/// </summary>
 	[CreateAssetMenu(fileName = "ScenesConfig", menuName = "FeSimpleFramework/Main Configs/ScenesConfig")]
 	public class ScenesConfig : ConfigSingleton<ScenesConfig>
 	{

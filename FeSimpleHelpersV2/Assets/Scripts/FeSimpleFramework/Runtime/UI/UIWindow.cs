@@ -11,6 +11,8 @@ namespace FeSimpleHelpers.UI
 {
 	/// <summary>
 	/// Basic Window functionality.
+	/// TODO Change how Transitions are handled. Bear in mind animator or tweening system.
+	/// TODO Need to change Invoke to a more robust system with coroutines because of timeScale.
 	/// </summary>
 	[RequireComponent(typeof(Canvas))]
 	[RequireComponent(typeof(CanvasGroup))]

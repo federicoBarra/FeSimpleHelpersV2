@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+// ACHTUNG! This system needs more tweaking and organization.
+// It is also, heavily unoptimized.
+
 namespace FeSimpleHelpers.StatsSystem
 {
 	public interface IStatHandlerProvider
@@ -120,7 +123,6 @@ namespace FeSimpleHelpers.StatsSystem
 				Debug.LogError($"Stat {st.displayName} not found for {BaseStatsDefinition} in stat handler. Returning 0. Make sure to call Invalidate() after adding providers or modifiers.");
 #endif
 			}
-			//float val = statBaseValue[st];//convert to TryGet
 
 			modifiersByStat.TryGetValue(st, out var modifiers);
 

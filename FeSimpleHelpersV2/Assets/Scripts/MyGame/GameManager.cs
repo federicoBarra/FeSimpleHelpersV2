@@ -1,7 +1,8 @@
 using System.Collections.Generic;
-using FeSimpleHelpers;
+using FeSimpleHelpers.Build;
 using FeSimpleHelpers.Core;
 using FeSimpleHelpers.ScenesHandling;
+using MyGame.Persistence;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;

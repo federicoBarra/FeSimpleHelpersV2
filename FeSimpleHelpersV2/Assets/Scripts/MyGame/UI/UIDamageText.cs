@@ -1,4 +1,5 @@
 using System.Collections;
+using FeSimpleHelpers.FeUtils;
 using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -50,30 +51,3 @@ public class UIDamageText : MonoBehaviour
 		gameObject.SetActive(false);
 	}
 }
-
-
-
-//void NormalUpdate()
-//{
-//	translationT += translationSpeed * Time.deltaTime;
-//	zoomT += zoomSpeed * Time.deltaTime;
-//
-//	Vector3 newLooAt = Vector3.LerpUnclamped(lastLookAtPos, wantedTransform.position, translationCurve.Evaluate(translationT / translationDuration));
-//
-//	Vector3 newOffset = Vector3.LerpUnclamped(lastOffset, wantedOffset, translationCurve.Evaluate(translationT / translationDuration));
-//
-//	float newZoom = Mathf.LerpUnclamped(lastZoom, wantedZoom, zoomCurve.Evaluate(zoomT / zoomDuration));
-//
-//	if (translationT > translationDuration && zoomT > zoomDuration)
-//	{
-//		camTransform.position = wantedTransform.position + wantedOffset.normalized * wantedZoom;
-//		camTransform.LookAt(wantedTransform.position);
-//	}
-//	else
-//	{
-//		Vector3 newPos = newLooAt + newOffset.normalized * newZoom;
-//		camTransform.position = newPos;
-//		Quaternion lookRot = Quaternion.LookRotation(newLooAt - camTransform.position);
-//		camTransform.rotation = lookRot;
-//	}
-//}

@@ -6,7 +6,10 @@ using UnityEditor;
 
 namespace FeSimpleHelpers.StatsSystem
 {
-
+	/// <summary>
+	/// Basically a list of stats and their base values. This is what a character class or item would have to define their stats.
+	/// The StatHandler will then pull from this and apply modifiers to get the final stat values.
+	/// </summary>
 	[CreateAssetMenu(menuName = "FeSimpleFramework/Stats/Base Stats Definition")]
 	public class BaseStatsDefinition : ScriptableObject
 	{
@@ -29,10 +32,8 @@ namespace FeSimpleHelpers.StatsSystem
 				if(stat.stat ==_statType)
 					return stat.baseValue;
 			}
-
 			return 0;
 		}
-
 	}
 
 #if UNITY_EDITOR

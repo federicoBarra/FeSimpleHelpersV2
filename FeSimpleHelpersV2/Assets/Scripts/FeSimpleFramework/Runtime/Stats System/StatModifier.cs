@@ -14,7 +14,7 @@ namespace FeSimpleHelpers.StatsSystem
 		public StatConfig statType;
 		public StatOperation operation;
 		public float value;
-		public int priority; //TODO remove this
+		public int priority; //TODO currently not being used
 
 		public float process(float _value)
 		{

@@ -1,4 +1,3 @@
-
 namespace FeSimpleHelpers.FeRandom
 {
 	public class RandomProvider

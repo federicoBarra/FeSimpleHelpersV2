@@ -7,7 +7,7 @@ using UnityEngine.UI;
 namespace FeSimpleHelpers.UI
 {
 	/// <summary>
-	/// TODO This needs more work
+	/// TODO This needs polishing
 	/// </summary>
 	public class UILoadingScreen : MonoBehaviourSingleton<UILoadingScreen>
 	{
@@ -21,9 +21,9 @@ namespace FeSimpleHelpers.UI
 
 		UILoadingState loadingState = null;
 
-		protected override void Awake()
+		public override void AwakeSingleton()
 		{
-			base.Awake();
+			base.AwakeSingleton();
 			LoaderManager.OnLoadingStart += LoadingStart;
 			LoaderManager.OnLoadingEnd += LoadingEnd;
 
@@ -33,9 +33,9 @@ namespace FeSimpleHelpers.UI
 			loadingStates.Add(LoaderManager.LoadingType.Multi, multi);
 		}
 
-		protected override void OnDestroy()
+		public override void OnDestroySingleton()
 		{
-			base.OnDestroy();
+			base.OnDestroySingleton();
 			LoaderManager.OnLoadingStart -= LoadingStart;
 			LoaderManager.OnLoadingEnd -= LoadingEnd;
 		}
